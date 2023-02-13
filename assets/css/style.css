@@ -1898,7 +1898,11 @@ Web Development Page
   /* overflow: visible; */
 }
 #content-career p {
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 20px;
+>>>>>>> 6b60e31cd07f3622e6131f452e29305d4ffbad73
   color: #222222;
   text-align: justify;
 }
@@ -2166,6 +2170,7 @@ Frontend Roadmap Section
   scroll-snap-type: mandatory;
 } */
 
+<<<<<<< HEAD
 @media (min-width: 1200px) {
   .roadmap .image img {
     min-width: 500px;
@@ -2308,3 +2313,5 @@ Frontend Roadmap Section
   from {opacity: .4}
   to {opacity: 1}
 }
+=======
+>>>>>>> 6b60e31cd07f3622e6131f452e29305d4ffbad73
