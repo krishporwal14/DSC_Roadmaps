@@ -723,6 +723,7 @@ section {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1814,13 +1815,19 @@ Careers
     font-size: 20px;
   }
 }
+@media (min-width : 576px) and (max-width : 768px) {
+  .section-title #careerheading::before,
+  .section-title #careerheading::after {
+   width: 20px; 
+  }
+}
 
 #web-dev p {
   margin-left: 100px;
   padding-top: 10px;
 }
 /*------------------Start Learning Button--------------*/
-#careers .btn-start-learning {
+.btn-start-learning {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1833,7 +1840,7 @@ Careers
   border: 2px solid #3498db;
 }
 
-#careers .btn-start-learning:hover {
+.btn-start-learning:hover {
   background: #3498db;
   color: #fff;
 }
@@ -1844,26 +1851,460 @@ Careers
   }
   #web-dev p {
     margin-left: 0px;
-    padding-top: 10px;
+    text-align: center;
   }
 }
 @media (min-width : 576px) and (max-width : 768px) {
   #careers img {
     width: 30%;
   }
+  #web-dev p {
+    margin-left: 0px;
+    text-align: center;
+  }
 }
 @media (min-width : 768px) and (max-width : 992px) {
   #careers img {
     width: 130%;
   }
+  #web-dev p {
+    margin-left: 30px;
+  }
 }
 @media (min-width : 992px) and (max-width : 1200px) {
   #careers img {
-    width: 150%;
+    width: 130%;
+  }
+  #web-dev p {
+    font-size: 20px;
   }
 }
 @media (min-width : 1200px) and (max-width : 1400px) {
   #careers img {
     width: 120%;
   }
+  #web-dev p {
+    font-size: 25px;
+  }
+}
+/*-------------------------------------------------------------
+Web Development Page
+-------------------------------------------------------------*/
+#content-career {
+  width: 100%;
+  /* height: auto; */
+  margin-top: 70px;
+  /* margin-bottom: 100px; */
+  /* overflow: visible; */
+}
+#content-career p {
+  font-size: 16px;
+  color: #222222;
+  text-align: justify;
+}
+/*------------------Section Title--------------*/
+.content-section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.content-section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  color: #222222;
+}
+.content-section-title h2::before,
+.content-section-title h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #3498db;
+  display: inline-block;
+}
+.content-section-title h2::before {
+  margin: 0 15px 10px 0;
+}
+
+.content-section-title h2::after {
+  margin: 0 0 10px 15px;
+}
+@media (min-width : 0px) and (max-width : 576px) {
+  .content-section-title #careerheading::before,
+  .content-section-title #careerheading::after {
+    width: 20px; 
+  }
+  .content-section-title #careerheading {
+    font-size: 20px;
+    padding-top: 50px;
+  }
+}
+@media (min-width : 576px) and (max-width : 768px) {
+  .content-section-title #careerheading::before,
+  .content-section-title #careerheading::after {
+    width: 20px; 
+  }
+}
+
+#content-career .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (min-width: 1024px) {
+  #content-career {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  /* #content-career {
+    height: auto;
+  } */
+
+  #content-career .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  #content-career {
+    text-align: center;
+  }
+
+  #content-career img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #content-career {
+    margin-top: 20px;
+  }
+
+  #content-career h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #content-career h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #content-career img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #content-career img {
+    width: 80%;
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@media (min-width : 1200px) {
+  #content-career p {
+    font-size: 25px;
+  }
+}
+/*---------------------------------------------
+Basics Section
+---------------------------------------------*/
+.basics-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.basics-card {
+  background-color: #f6f6f6;
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px 15px;
+  margin-top: 30px;
+}
+@media (min-width : 0px) and (max-width : 576px) {
+  .basics-card {
+    width: 80%;
+  }
+  .basics-card-container {
+    justify-content: center;
+  }
+}
+@media (min-width : 576px) and (max-width : 768px) {
+  .basics-card {
+    width: 90%;
+  }
+  .basics-card-container {
+    justify-content: center;
+  }
+}
+@media (min-width : 768px) and (max-width : 992px) {
+  .basics-card {
+    width: 95%;
+  }
+  .basics-card-container {
+    justify-content: center;
+  }
+}
+.basics-card h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222222;
+  padding-top: 10px;
+}
+.basics-card p {
+  font-size: 20px;
+  color: #222222;
+  text-align: justify;
+}
+
+/*---------------------------------------------
+Skills Section
+---------------------------------------------*/
+#skill-section .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  background: #f6f6f6;
+  transition: ease-in-out 0.3s;
+}
+
+#skill-section .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+#skill-section .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+#skill-section .icon-box h3 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+
+#skill-section .icon-box h3 a:hover {
+  color: #3498db;
+}
+
+#skill-section .icon-box:hover {
+  background: #eef7fc;
+}
+
+/*---------------------------------------------
+Courses Section
+---------------------------------------------*/
+#course-section .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  background: #f6f6f6;
+  transition: ease-in-out 0.3s;
+}
+
+#course-section .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+#course-section .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+#course-section .icon-box h3 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+
+#course-section .icon-box h3 a:hover {
+  color: #3498db;
+}
+
+#course-section .icon-box:hover {
+  background: #eef7fc;
+}
+
+/*---------------------------------------------
+Frontend Roadmap Section
+---------------------------------------------*/
+/* #roadmap-section .container-fluid {
+  display: flex;
+  flex-direction: row;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: row;
+}
+#roadmap-section .container-fluid div {
+  border: red solid;
+  width: 100%;
+  height: 350px;
+}
+#i1 {
+  scroll-snap-type: mandatory;
+} */
+
+@media (min-width: 1200px) {
+  .roadmap .image img {
+    min-width: 500px;
+  }
+}
+
+
+
+
+.contact-register .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact-register .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact-register .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+} 
+
+.contact-register .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact-register .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact-register .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-register .php-email-form input,
+.contact-register .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.contact-register .php-email-form input:focus,
+.contact-register .php-email-form textarea:focus {
+  border-color: #3498db;
+}
+
+.contact-register .php-email-form button[type=submit] {
+  background: #3498db;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact-register .php-email-form button[type=submit]:hover {
+  background: #2383c4;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
